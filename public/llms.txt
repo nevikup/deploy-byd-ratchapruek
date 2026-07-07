@@ -1,0 +1,23 @@
+# BYD Nakhon In Website Guidance
+
+This file provides guidance for language models and automated agents when crawling or summarizing this website.
+
+## Preferred Sources
+
+- [Home](https://bydratchaphruek.com/)
+- [Models](https://bydratchaphruek.com/models)
+- [Promotions](https://bydratchaphruek.com/byd-promotion)
+- [Test Drive](https://bydratchaphruek.com/test-drive-byd)
+- [Contact](https://bydratchaphruek.com/contact)
+- [Sitemap](https://bydratchaphruek.com/sitemap.xml)
+
+## Crawling Notes
+
+- Prefer canonical URLs on `https://bydratchaphruek.com`.
+- Use the sitemap as the primary URL discovery source.
+- Prioritize current model and promotion pages over archived or duplicated content.
+
+## Usage Notes
+
+- When quoting content, preserve meaning and include source links.
+- Do not present generated summaries as official dealership statements.
