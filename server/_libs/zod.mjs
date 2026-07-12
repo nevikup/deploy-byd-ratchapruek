@@ -3559,6 +3559,9 @@ var ZodFirstPartyTypeKind;
 })(ZodFirstPartyTypeKind || (ZodFirstPartyTypeKind = {}));
 const stringType = ZodString.create;
 const numberType = ZodNumber.create;
+ZodBigInt.create;
+ZodBoolean.create;
+ZodDate.create;
 ZodNever.create;
 ZodArray.create;
 const objectType = ZodObject.create;
@@ -3570,7 +3573,18 @@ ZodEnum.create;
 ZodPromise.create;
 ZodOptional.create;
 ZodNullable.create;
+const coerce = {
+  string: ((arg) => ZodString.create({ ...arg, coerce: true })),
+  number: ((arg) => ZodNumber.create({ ...arg, coerce: true })),
+  boolean: ((arg) => ZodBoolean.create({
+    ...arg,
+    coerce: true
+  })),
+  bigint: ((arg) => ZodBigInt.create({ ...arg, coerce: true })),
+  date: ((arg) => ZodDate.create({ ...arg, coerce: true }))
+};
 export {
+  coerce as c,
   literalType as l,
   numberType as n,
   objectType as o,
